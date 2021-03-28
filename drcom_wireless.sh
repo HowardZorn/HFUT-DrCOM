@@ -15,4 +15,4 @@ curl 'http://210.45.240.105:801/eportal/' --cookie ./cookies --cookie-jar ./cook
 # login
 res=`curl $url --cookie ./cookies --cookie-jar ./cookies --silent | sed -n 's/.*(\(.*\)).*/\1/p' | jq`
 # test
-curl http://detectportal.firefox.com/success.txt --silent
+curl http://detectportal.firefox.com/success.txt --silent --ipv4
